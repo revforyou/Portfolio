@@ -62,7 +62,7 @@ const NavBar = () => {
         </a>
 
         <a
-          href="https://leetcode.com/revanthjyothula/"
+          href="https://leetcode.com/u/revforyou/"
           target="_blank"
           rel="noopener noreferrer"
           title="LeetCode"
