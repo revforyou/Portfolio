@@ -2,27 +2,10 @@ import { useState, useEffect, useRef } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 
 const greetings = [
-    'Hello',
-    'Bonjour',
-    'Hola',
-    'Ciao',
-    'नमस्ते',
-    'سلام',
-    'Здравствуйте',
-    'こんにちは',
-    'Sawubona',
-    'Merhaba',
-    'Guten Tag',
-    'Salve',
-    'שלום',
-    '您好',
-    'Olá',
-    '안녕',
-    'Sveiki',
-    'Kumusta',
+  'Hello', 'Bonjour', 'Hola', 'Ciao', 'नमस्ते', 'سلام',
+  'Здравствуйте', 'こんにちは', 'Guten Tag', 'Salve',
+  '您好', 'Olá', '안녕', 'Sveiki',
 ];
-
-  
 
 const Greetings = ({ onFinish }) => {
   const [currentGreeting, setCurrentGreeting] = useState(0);
@@ -30,16 +13,14 @@ const Greetings = ({ onFinish }) => {
   const rippleRef = useRef(null);
 
   useEffect(() => {
-    // Change greetings every 500ms
     const interval = setInterval(() => {
-      setCurrentGreeting((prevGreeting) => (prevGreeting + 1) % greetings.length);
-    }, 100);
+      setCurrentGreeting((prev) => (prev + 1) % greetings.length);
+    }, 175); // Fast cycle
 
-    // Trigger ripple effect and transition to main app after 5 seconds
     const timeout = setTimeout(async () => {
       clearInterval(interval);
 
-      // Trigger ripple effect
+      // Add ripple
       if (rippleRef.current) {
         const ripple = document.createElement('span');
         ripple.className = 'ripple';
@@ -50,17 +31,15 @@ const Greetings = ({ onFinish }) => {
         ripple.style.top = `${rect.height / 2 - size / 2}px`;
         rippleRef.current.appendChild(ripple);
 
-        // Remove ripple after animation
-        ripple.addEventListener('animationend', () => {
-          ripple.remove();
-        });
+        ripple.addEventListener('animationend', () => ripple.remove());
       }
 
-      // Wait for ripple animation to complete
-      await new Promise((resolve) => setTimeout(resolve, 600)); // Ripple duration + small buffer
-      await controls.start({ opacity: 0, transition: { duration: 0.5 } });
-      onFinish(); // Trigger the transition to the main website
-    }, 2000); // Display the greetings for 5 seconds
+      // Fade out
+      await new Promise((res) => setTimeout(res, 500));
+      await controls.start({ opacity: 0, transition: { duration: 0.6 } });
+
+      onFinish();
+    }, 2000); // Show greetings for 3s
 
     return () => {
       clearInterval(interval);
@@ -70,25 +49,35 @@ const Greetings = ({ onFinish }) => {
 
   return (
     <motion.div
-      className="relative flex justify-center items-center h-screen bg-neutral-950 overflow-hidden"
+      className="relative flex justify-center items-center h-screen bg-black overflow-hidden"
       initial={{ opacity: 1 }}
       animate={controls}
       ref={rippleRef}
     >
-      <h1 className="text-5xl font-bold text-white">{greetings[currentGreeting]}</h1>
+      <motion.h1
+        key={currentGreeting}
+        initial={{ opacity: 0, y: 5 }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 0.2 }}
+        className="text-5xl font-bold text-white"
+      >
+        {greetings[currentGreeting]}
+      </motion.h1>
+
       <style jsx>{`
         .ripple {
           position: absolute;
           border-radius: 50%;
-          background: rgba(255, 255, 255, 0.3);
+          background: rgba(255, 255, 255, 0.15);
           pointer-events: none;
           transform: scale(0);
-          animation: ripple-animation 0.6s linear;
+          animation: ripple-animation 0.7s ease-out forwards;
         }
 
         @keyframes ripple-animation {
           to {
-            transform: scale(4);
+            transform: scale(3.5);
             opacity: 0;
           }
         }
