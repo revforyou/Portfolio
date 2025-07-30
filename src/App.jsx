@@ -5,6 +5,7 @@ import ToolsTechnologies from './components/ToolsTechnologies';
 import Experience from './components/Experience';
 import Projects from './components/Projects';
 import Education from './components/Education';
+import Contact from './components/Contact';      // <-- NEW import
 import Footer from './components/Footer';
 import Greetings from './components/greetings';
 
@@ -47,6 +48,10 @@ const App = () => {
 
             <div id="education">
               <Education />
+            </div>
+
+            <div id="contact">  {/* NEW SECTION */}
+              <Contact />
             </div>
 
             <div id="footer">

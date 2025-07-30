@@ -8,8 +8,7 @@ import malware from '../assets/malware.png'
 import nba from '../assets/nba.png'
 
 export const HERO_CONTENT = 
-`Hello! I’m Revanth, a recent Graduate in Computer Engineering at NYU with a strong background in machine learning, data engineering, and computer vision. My expertise encompasses data integration, advanced analytics, and production-level code development, underpinned by a strong foundation in Python, SQL, and cloud technologies such as Azure, AWS, and Snowflake. 
-I’m passionate about transforming complex data into actionable insights, and I have a proven track record of optimizing data systems for efficiency and accuracy. My recent projects in MLops, including computer vision applications such as content moderation systems and resume-matching systems, highlight my commitment to real-world machine learning applications.`;
+`I'm a Recent Computer Engineering Graduate from NYU with hands-on experience in building scalable data pipelines, deploying ML systems, and delivering production-ready software. I’ve worked as a Data Engineer at 8th Element AI and LTIMindtree, optimizing ETL workflows using Spark, Azure, and Snowflake. My projects span MLOps, NLP, recommender systems, and distributed training, powered by strong skills in Python, SQL, and tools like Docker, Kubernetes, Git, FastAPI, and MLflow. I'm seeking full-time roles in Data Engineering, ML Engineering, or Software Development where I can solve real-world problems at scale.`;
 
 
 export const EXPERIENCES = [
@@ -22,7 +21,7 @@ export const EXPERIENCES = [
 by 40% and optimizing storage across distributed systems for both batch and streaming workloads. Curated and transformed 30K+ healthcare records from diverse sources by designing big data schema models using dimensional
 modeling, partitioning, and Delta Lake, improving data quality, consistency, and analytical readiness for BI reporting. Validated and cleansed structured/unstructured data using SQL, enhancing trust in analytics pipelines by reducing data errors by
 60%, and supporting a smooth system upgrade in collaboration with engineering and analytics teams.`,
-    technologies: ["Python", "SQL", "Azure Databricks", "Azure Synapse"],
+    technologies: ["Python", "SQL", "Azure Databricks", "Azure Synapse","Microsoft SQL Server"],
   },
   {
     year: "June 2022 - August 2022",

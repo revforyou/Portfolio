@@ -3,7 +3,7 @@ import { SiLeetcode } from "react-icons/si";
 import { Link } from "react-scroll";
 
 const NavBar = () => {
-  const sections = ["home", "technologies", "experience", "projects", "education"];
+  const sections = ["home", "Skills", "experience", "projects", "education"];
 
   return (
     <nav className="mb-20 flex flex-wrap items-center justify-between py-6">
