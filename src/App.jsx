@@ -5,7 +5,7 @@ import ToolsTechnologies from './components/ToolsTechnologies';
 import Experience from './components/Experience';
 import Projects from './components/Projects';
 import Education from './components/Education';
-import Contact from './components/Contact';      // <-- NEW import
+import Contact from './components/Contact';      
 import Footer from './components/Footer';
 import Greetings from './components/greetings';
 
@@ -34,7 +34,7 @@ const App = () => {
               <Hero />
             </div>
 
-            <div id="technologies">
+            <div id="skills">
               <ToolsTechnologies />
             </div>
 
