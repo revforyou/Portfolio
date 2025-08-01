@@ -1,5 +1,5 @@
 # Developer-Portfolio
-Created my developer portfolio using React, Framer Motion, NodeJS, and deployed with Vercel
+This is a fully responsive, modern, and animated developer portfolio built using React.js, Tailwind CSS, and Framer Motion.
 
 ## Future Updates
 
