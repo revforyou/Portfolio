@@ -11,6 +11,10 @@ To make changes and update the portfolio in the future, follow these steps:
    
 Open the project folder in VS Code and edit your React components, styles, content, or add new projects.
 
+2. **Install Dependencies**
+   ```bash
+   npm install
+
 3. **Test Locally**  
    Run the development server to preview changes live:  
    ```bash
