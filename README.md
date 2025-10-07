@@ -26,7 +26,7 @@ Open the project folder in VS Code and edit your React components, styles, conte
    ```bash
    npm run build
 
-5. Commit and push changes to the main branch:
+5. **Commit and push changes to the main branch:**
 
    ```bash
    git add .
