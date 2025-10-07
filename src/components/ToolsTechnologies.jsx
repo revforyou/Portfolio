@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 const tools = {
-  'Programming Languages': ['Python', 'SQL', 'R', 'C', 'MATLAB', 'Bash'],
+  'Programming Languages': ['Python', 'SQL', 'R', 'C', 'MATLAB', 'Bash', 'JavaScript'],
   'Data Tools': ['Pandas', 'NumPy', 'Spark', 'Hadoop', 'scikit-learn'],
   'Visualization': ['Tableau', 'PowerBI', 'Matplotlib', 'Seaborn', 'Excel'],
   'Machine Learning': ['TensorFlow', 'PyTorch', 'Keras', 'XGBoost', 'CNNs', 'RNNs', 'Transformers'],
