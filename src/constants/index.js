@@ -8,10 +8,20 @@ import malware from '../assets/malware.png'
 import nba from '../assets/nba.png'
 
 export const HERO_CONTENT = 
-`I'm a Recent Computer Engineering Graduate from NYU with hands-on experience in building scalable data pipelines, deploying ML systems, and delivering production-ready software. I’ve worked as a Data Engineer at 8th Element AI and LTIMindtree, optimizing ETL workflows using Spark, Azure, and Snowflake. My projects span MLOps, NLP, recommender systems, and distributed training, powered by strong skills in Python, SQL, and tools like Docker, Kubernetes, Git, FastAPI, and MLflow. I'm seeking full-time roles in Data Engineering, ML Engineering, or Software Development where I can solve real-world problems at scale.`;
+`I'm a Recent Computer Engineering Graduate from NYU with hands-on experience in building scalable data pipelines, deploying ML systems, and delivering production-ready software. I’ve worked as a Data Engineer at 8th Element AI and LTIMindtree, optimizing ETL workflows using Spark, Azure, and Snowflake, and as a Software Engineer contributor at Hack for LA, developing design-system components for a civic-tech open-source initiative and comprehensive backend support features. My projects span MLOps, NLP, recommender systems, and distributed training, powered by strong skills in Python, SQL, and tools like Docker, Kubernetes, Git, FastAPI, and MLflow. I'm seeking full-time roles in Data Engineering, ML Engineering, or Software Development where I can solve real-world problems at scale.`;
 
 
 export const EXPERIENCES = [
+  {
+    year: "August 2025 - Present",
+    role: "Software Engineer (Full Time Open Source)",
+    company: "Hack for LA",
+    description: 
+      `Led the development of the Hack for LA microsite for TWE Design System integration by building 6+ modular components in
+JavaScript, SCSS, and HTML to improve UI consistency and reduce new developer onboarding time by 55%. Implemented comprehensive backend support features, including live reload capabilities, API stubs, versioned content endpoints,
+and a caching layer integrated with targeted CI/CD automation, reducing build times by 75% and deployment cycles by 35%. Participate in open-source workflows, including issue triage, GitHub PR reviews, and documentation updates.`,
+    technologies: ["GitHub", "JavaScript", "Python", "HTML", "CSS"],
+  },
   {
     year: "January 2023 - July 2023",
     role: "Data Engineer",
