@@ -6,6 +6,8 @@ import content from '../assets/content.png'
 import spotify from '../assets/spotify.png'
 import malware from '../assets/malware.png'
 import nba from '../assets/nba.png'
+import multimodal from '../assets/multimodal.png';
+
 
 export const HERO_CONTENT = 
 `I'm a Recent Computer Engineering Graduate from NYU with hands-on experience in building scalable data pipelines, deploying ML systems, and delivering production-ready software. I’ve worked as a Data Engineer at 8th Element AI and LTIMindtree, optimizing ETL workflows using Spark, Azure, and Snowflake, and as a Software Engineer contributor at Hack for LA, developing design-system components for a civic-tech open-source initiative and comprehensive backend support features. My projects span MLOps, NLP, recommender systems, and distributed training, powered by strong skills in Python, SQL, and tools like Docker, Kubernetes, Git, FastAPI, and MLflow. I'm seeking full-time roles in Data Engineering, ML Engineering, or Software Development where I can solve real-world problems at scale.`;
@@ -84,10 +86,20 @@ export const PROJECTS = [
   {
     title: "Continual Learning Using Regularisation Methods",
     description:
-      "Proposed a novel CNN-based architecture for real-time fault detection in smart microgrids. Improved fault classification accuracy and latency. Published in IEEE.",
+      "Proposed a novel CNN-based architecture for real-time fault detection in smart microgrids. Improved fault classification accuracy and latency.",
     technologies: ["Python","A/B Testing","Advanced ML","EWC","Catastrophic Forgetting"],
     image: continual,
     sourceCode: "https://github.com/revforyou/Continual_Learning_Regularisation",
+  },
+
+
+  {
+    title: "Multimodal Emotion Recognition using Transformers",
+    description:
+      "This project explores multimodal emotion recognition using facial and vocal cues from the RAVDESS dataset. We evaluate and compare three fusion strategies built on transformer and attention-based architectures to enhance affective computing systems that better understand human emotions.",
+    technologies: ["Python","Transformers","Computer Vision"],
+    image: multimodal,
+    sourceCode: "https://github.com/revforyou/Emotion_Recognition_Transformers",
   },
 
   {
