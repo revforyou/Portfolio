@@ -7,6 +7,8 @@ import spotify from '../assets/spotify.png'
 import malware from '../assets/malware.png'
 import nba from '../assets/nba.png'
 import multimodal from '../assets/multimodal.png';
+import strava from '../assets/Strava.png';
+import llm from '../assets/LLM.png';
 
 
 export const HERO_CONTENT = 
@@ -18,38 +20,46 @@ export const EXPERIENCES = [
     year: "August 2025 - Present",
     role: "Software Engineer (Full Time Open Source)",
     company: "Hack for LA",
-    description: 
-      `Led the development of the Hack for LA microsite for TWE Design System integration by building 6+ modular components in
-JavaScript, SCSS, and HTML to improve UI consistency and reduce new developer onboarding time by 55%. Implemented comprehensive backend support features, including live reload capabilities, API stubs, versioned content endpoints,
-and a caching layer integrated with targeted CI/CD automation, reducing build times by 75% and deployment cycles by 35%. Participate in open-source workflows, including issue triage, GitHub PR reviews, and documentation updates.`,
-    technologies: ["GitHub", "JavaScript", "Python", "HTML", "CSS"],
+    description:
+      `Spearheaded adoption of Material 3 as the unified design baseline across the organization, proposing and implementing a React/JavaScript component library to replace 4 fragmented, team-specific design systems used by 100+ contributors. Launched 10+ reusable components to production, conducting code reviews, enforcing quality standards, and authoring standardized naming conventions and contributor documentation that reduced onboarding ramp-up time by 50%. Resolved persistent Docker-based CI/CD failures in GitHub Actions, stabilizing the deployment pipeline and cutting deploy times by 35%, enabling reliable continuous delivery to GitHub Pages.`,
+    technologies: ["React", "JavaScript", "Material 3", "Docker", "GitHub Actions", "HTML", "CSS"],
   },
   {
     year: "January 2023 - July 2023",
     role: "Data Engineer",
     company: "8th Element AI",
-    description: 
-      `Built and deployed a scalable ETL pipeline using Python, Apache Spark, and Azure Databricks, reducing data processing time
-by 40% and optimizing storage across distributed systems for both batch and streaming workloads. Curated and transformed 30K+ healthcare records from diverse sources by designing big data schema models using dimensional
-modeling, partitioning, and Delta Lake, improving data quality, consistency, and analytical readiness for BI reporting. Validated and cleansed structured/unstructured data using SQL, enhancing trust in analytics pipelines by reducing data errors by
-60%, and supporting a smooth system upgrade in collaboration with engineering and analytics teams.`,
-    technologies: ["Python", "SQL", "Azure Databricks", "Azure Synapse","Microsoft SQL Server"],
+    description:
+      `Built distributed ETL pipelines on Azure Databricks (PySpark, Delta Lake) to migrate HIPAA-compliant patient health records for Sentara Healthcare's MyChart platform, a $13.2B health system serving 1M+ members across 12 hospitals and 400+ care sites. Architected scalable SQL schemas and optimized query pipelines in Azure Synapse Analytics, migrating years of legacy patient records to power downstream dashboards, analytics, and ML models across the new platform. Automated data ingestion and validation pipelines in Python, reducing manual debugging effort by 10+ hours/week and accelerating downstream analytics and ML model readiness for production deployment.`,
+    technologies: ["Python", "PySpark", "Azure Databricks", "Delta Lake", "Azure Synapse", "SQL"],
   },
   {
     year: "June 2022 - August 2022",
     role: "Data Engineer",
-    company: "Larsen and Toubro Infotech",
-    description: 
-      `Led a multi-source data migration project to Snowflake, transforming fragmented business data into a unified training-ready
-schema using SQL and Python, improving processing efficiency by 20%. Automated preprocessing and quality checks on 50K+ records using Pandas, SnowSQL, and Jupyter, boosting data
-accuracy by 30% and reducing pipeline failures by 50% during M&A consolidation—collaborated with the Data Principal
-and cross-functional teams to ensure smooth integration.`,
-    technologies: ["Snowflake", "Azure", "Python", "Jupyter", "LTIMosaic"],
+    company: "LTIMindtree",
+    description:
+      `Supported the LTI & Mindtree M&A data consolidation by engineering ETL pipelines to migrate and unify enterprise datasets including BI reports and client records across 80K+ employees into Snowflake and Azure, improving processing efficiency by 20%. Designed SQL schemas and wrote Python ingestion scripts to build a unified enterprise data platform, collaborating cross-functionally with 15+ members across data science, product, and engineering teams to deliver analytics-ready datasets. Developed Power BI dashboards consumed by senior leadership during standups to surface cost-cutting opportunities and consolidation progress, enabling data-driven decision-making through the merger integration.`,
+    technologies: ["Snowflake", "Azure", "Python", "SQL", "Power BI", "LTIMosaic"],
   },
  
 ];
 
 export const PROJECTS = [
+  {
+    title: "Strava Athlete Intelligence: Personalized Injury Risk Prevention for Recreational Athletes",
+    description:
+      "An intelligent training analysis platform that transforms existing Strava data into actionable injury prevention insights. Connects via OAuth to ingest 90 days of activity history and heart rate streams, then computes daily risk scores using biomechanically-validated load metrics (ATL/CTL/TSB, ACWR, training monotony). Uses Bayesian calibration to personalize risk thresholds per athlete, with every score explained in plain English by Claude Haiku—delivering sports science-grade intelligence previously accessible only through expensive wearables or coaching.",
+    technologies: ["Next.js", "FastAPI", "Celery", "Redis", "scikit-learn", "SHAP", "Claude Haiku", "Supabase", "Strava API", "Vercel", "Railway"],
+    image: strava,
+    sourceCode: "https://github.com/revforyou/athlete-intelligence",
+  },
+  {
+    title: "LLM Support Triage & Quality Gateway: Production Observability for AI-Powered Customer Support",
+    description:
+      "A drop-in API gateway that solves the invisible problem every AI-powered support team faces: no visibility into whether their LLM is helping or hallucinating at scale. Automatically classifies ticket complexity, routes to cost-optimal models (Haiku for FAQs, Sonnet for complex issues), and evaluates every response using LLM-as-judge scoring. Implements statistically rigorous A/B testing with Welch's t-test (p < 0.05) and monitors production quality drift with rolling 7-day baselines—think Datadog for LLM responses.",
+    technologies: ["Next.js", "FastAPI", "Celery", "Redis", "Claude Haiku", "OpenAI SDK", "SciPy", "scikit-learn", "Supabase", "Prometheus", "Vercel", "Railway"],
+    image: llm,
+    sourceCode: "https://github.com/revforyou/llm-gateway",
+  },
   {
     title: "Twitter Content Moderation System",
     description:
