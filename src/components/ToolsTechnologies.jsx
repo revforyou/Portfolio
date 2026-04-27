@@ -1,11 +1,11 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 
 const tools = {
   'Programming Languages': ['Python', 'SQL', 'R', 'C', 'MATLAB', 'Bash', 'JavaScript'],
-  'Data Tools': ['Pandas', 'NumPy', 'Spark', 'Hadoop', 'scikit-learn'],
-  'Visualization': ['Tableau', 'PowerBI', 'Matplotlib', 'Seaborn', 'Excel'],
-  'Machine Learning': ['TensorFlow', 'PyTorch', 'Keras', 'XGBoost', 'CNNs', 'RNNs', 'Transformers'],
+  'Data Tools': ['Pandas', 'NumPy', 'PySpark', 'Spark', 'Hadoop', 'scikit-learn', 'Delta Lake', 'Databricks', 'Supabase', 'PostgreSQL', 'Redis', 'MongoDB', 'Snowflake'],
+  'Data Analytics & Engineering': ['ETL Pipelines', 'Data Modeling', 'Dimensional Modeling', 'Data Warehousing'],
+  'Visualization': ['Tableau', 'PowerBI', 'Matplotlib', 'Seaborn', 'Plotly', 'Excel'],
+  'Machine Learning': ['TensorFlow', 'PyTorch', 'Keras', 'XGBoost', 'CNNs', 'RNNs', 'Transformers', 'LLMs', 'LangChain', 'RAG', 'NLP'],
   'DevOps & Cloud': ['Docker', 'Kubernetes', 'Terraform', 'MLflow', 'FastAPI', 'Azure', 'AWS', 'Snowflake', 'Git'],
   'Web Development': ['React', 'JavaScript', 'HTML5', 'CSS3', 'Node.js', 'MongoDB', 'Express'],
 };
